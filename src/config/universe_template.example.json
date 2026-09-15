@@ -1,0 +1,19 @@
+{
+  "niche": "skincare",
+  "account_handle": "@toko_utama_skincare",
+  "goal": { "target_buzz": 80, "platform_mix": ["tiktok", "instagram", "x"] },
+  "universes": {
+    "pbc": {
+      "kind": "pbc",
+      "goal": { "target_buzz": 80 },
+      "agents": [
+        {"role": "pbc", "persona": {"tone": ["edukatif", "jujur"], "expertise": ["skincare routine", "ingredient education"]}, "config": {"llm": {"model_tier": "premium"}, "tools": ["search_trends"]}, "budget_tier": "premium"},
+        {"role": "creator_content", "persona": {"tone": ["ramah", "edukatif"]}, "config": {"llm": {"model_tier": "frugal"}, "platforms": ["tiktok", "instagram"], "schedule": {"posts_per_day": 3, "best_hours": [11, 19, 21]}}, "budget_tier": "frugal"},
+        {"role": "creator_affiliate", "persona": {"tone": ["persuasif", "transparan"]}, "config": {"llm": {"model_tier": "frugal"}, "platforms": ["tiktok"], "schedule": {"posts_per_day": 2}}, "budget_tier": "frugal"},
+        {"role": "creator_live", "persona": {"tone": ["enerjik", "tegas"]}, "config": {"llm": {"model_tier": "standard"}, "schedule": {"best_hours": [19, 21]}}, "budget_tier": "standard"}
+      ]
+    },
+    "tentor_hos": {"kind": "tentor_hos", "goal": {"kriteria": "relevansi, kejujuran klaim, CTA"}, "agents": [{"role": "tentor_hos", "persona": {"tone": ["kritis", "konstruktif"]}, "config": {"llm": {"model_tier": "premium"}, "tools": ["rubric"]}, "budget_tier": "premium"}]},
+    "distribution_center": {"kind": "distribution_center", "goal": {"mode": "cross_platform_targeted"}, "agents": [{"role": "distributor", "persona": {"tone": ["presisi"]}, "config": {"llm": {"model_tier": "standard"}, "platforms": ["tiktok", "instagram", "x"], "schedule": {"best_hours": [11, 19, 21]}}, "budget_tier": "standard"}]}
+  }
+}
