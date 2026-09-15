@@ -1,0 +1,2 @@
+MVP prototype POROS.AI - tanpa dependency eksternal (stdlib only).
+Python >= 3.10
